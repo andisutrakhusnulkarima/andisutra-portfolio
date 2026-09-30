@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andi Sutra Khusnul K. | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <!-- Tambahan style (Skills chips, status badge, tombol email). Boleh dipindah ke style.css -->
+    <style>
+        .hero-status {
+            display: inline-block;
+            margin: 0 0 18px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.5);
+            color: #4ade80;
+        }
+
+        .skills-group { margin-bottom: 28px; }
+        .skills-group h3 { font-size: 1rem; margin-bottom: 12px; opacity: 0.85; }
+
+        .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+
+        .chips span {
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: 0.2s;
+        }
+
+        .chips span:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-2px); }
+
+        /* Skill inti (yang dipakai kerja/magang) */
+        .chips span.core {
+            background: rgba(99, 102, 241, 0.18);
+            border-color: rgba(129, 140, 248, 0.7);
+            font-weight: 600;
+        }
+
+        .chips-soft span { border-style: dashed; }
+
+        .skills-note { font-size: 0.9rem; opacity: 0.7; margin-bottom: 28px; }
+
+        .contact-email { margin: 20px 0; }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ===================================================== -->
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>Portfolio<span>/&gt;</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#organization">Organization</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- =====================================================
+         HOME
+    ===================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hello">Hello, I'm</p>
+
+            <h1>
+                <span>Andi Sutra Khusnul K.</span>
+            </h1>
+
+            <h2>Mobile &amp; Backend Developer</h2>
+
+            <p class="hero-description">
+                Computer Engineering graduate from Telkom University who builds
+                Android apps with Flutter and backend systems with CodeIgniter
+                and Node.js. Interned at PT PLN UP3 Parepare and CELOE Telkom
+                University, delivering a tree-mapping mobile app and a
+                document management system.
+            </p>
+
+            <!-- BUTTON -->
+            <div class="hero-buttons">
+
+                <a href="#projects" class="cta-button">
+                    <i class="fas fa-code"></i>
+                    Explore My Projects
+                </a>
+
+                <a href="cv.pdf" class="cta-button cv-button" download="CV Andi Sutra.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                    Download CV
+                </a>
+
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-links">
+
+                <a href="mailto:andisutrakhusnulkarima@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/andisutrakhusnulkarima" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/andisutra-khusnulkarima-b037202a1/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/andi_syutra" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ===================================================== -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>01.</span>
+                About Me
+            </div>
+
+            <div class="about-grid">
+
+                <!-- PROFILE CARD -->
+                <div class="profile-card">
+
+                    <div class="profile-avatar">
+                        <img src="foto.jpeg" alt="Foto Profil">
+                    </div>
+
+                    <h3>Andi Sutra Khusnul K.</h3>
+
+                    <p class="profile-role">Mobile &amp; Backend Developer</p>
+
+                    <p class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Makassar, Sulawesi Selatan
+                    </p>
+
+                    <p class="profile-coding">
+                        Coding Since: 2022 &nbsp;|&nbsp; 2 Internships
+                    </p>
+
+                </div>
+
+                <!-- ABOUT TEXT -->
+                <div class="about-content">
+
+                    <h2>Turning Ideas Into Digital Experiences</h2>
+
+                    <p>
+                        I am a Computer Engineering graduate of Telkom University with hands-on experience building mobile applications and backend systems. My final project, PLN JagaGRID, is a Flutter app that helps PLN UP3 Parepare map and monitor trees near power lines.
+                    </p>
+
+                    <p>
+                        I like learning new things, solving problems, and continuously improving my technical skills. I also enjoy working independently and as part of a team, while adapting to new challenges and environments.
+                    </p>
+
+                    <p>
+                        My interests include mobile development, backend development, and building software that solves real operational problems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EDUCATION
+    ===================================================== -->
+
+    <section id="education" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>02.</span>
+                Education
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Engineering</h3>
+                        <p>Telkom University — Bandung, West Java, Indonesia</p>
+                        <p>2022 - 2026</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>SMA Negeri 2 Makassar</h3>
+                        <p>Social Sciences (IPS) — Makassar, South Sulawesi, Indonesia</p>
+                        <p>2019 - 2022</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WORK EXPERIENCE
+    ===================================================== -->
+
+    <section id="experience" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>03.</span>
+                Work Experience
+            </div>
+
+            <div class="timeline">
+
+                <!-- PLN -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <h3>Mobile Application Developer Intern</h3>
+
+                        <p class="timeline-role">PT PLN (Persero) UP3 Parepare</p>
+
+                        <p class="timeline-meta">
+                            Parepare, South Sulawesi, Indonesia &nbsp;|&nbsp; March 2026 – June 2026
+                        </p>
+
+                        <ul>
+                            <li>
+                                Independently developed PLN JagaGRID, an Android tree-mapping and vegetation-monitoring app, using Flutter (Dart) and Provider, handling all coding within a 3-person team while teammates focused on project documentation.
+                            </li>
+                            <li>
+                                Integrated Firebase Firestore (real-time), Google Maps API, ImageKit.io with image compression, a Node.js backend on Railway, and Telegram Bot API.
+                            </li>
+                            <li>
+                                Implemented GPS-based tree mapping, growth prediction with execution priority, risk analysis, H-3 reminder notifications, and Excel report export.
+                            </li>
+                            <li>
+                                Tested with black-box and white-box scenarios (100% passed) and a user acceptance test with 14 respondents (85.75% satisfaction).
+                            </li>
+                        </ul>
+
+                        <a
+                            href="https://youtu.be/t6bIU_6evUw?si=xjd5GRTBvVIYdc1b"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="video-proof"
+                        >
+                            <div class="video-proof-thumb">
+                                <img
+                                    src="https://img.youtube.com/vi/t6bIU_6evUw/hqdefault.jpg"
+                                    alt="Video demo Tree Management App"
+                                    loading="lazy"
+                                >
+                                <div class="video-proof-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="video-proof-caption">
+                                <i class="fab fa-youtube"></i>
+                                Watch project demo
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- CELOE -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <h3>Backend Developer</h3>
+
+                        <p class="timeline-role">
+                            Center for e-Learning and Open Education (CELOE) – Telkom University
+                        </p>
+
+                        <p class="timeline-meta">
+                            Bandung, West Java, Indonesia &nbsp;|&nbsp; June 2025 – August 2025
+                        </p>
+
+                        <ul>
+                            <li>
+                                Built the backend of a web-based Document Management System (DMS) using CodeIgniter 4 (PHP, MVC) and MySQL in a 4-person team, covering User Management, Master Data (Faculty, Unit), Role, and Menu modules with full CRUD.
+                            </li>
+                            <li>
+                                Developed RESTful APIs connected to the frontend via JSON, worked with JWT-based authentication, and implemented role-based access control so only admins can edit or delete data.
+                            </li>
+                            <li>
+                                Improved performance with pagination, lazy loading, data compression, and database indexing; added input validation, search, and PDF/CSV/Excel export.
+                            </li>
+                            <li>
+                                Tested APIs with Postman, ran unit, integration, and user acceptance testing, wrote user manuals and the UAT document, and deployed the application to the server.
+                            </li>
+                        </ul>
+
+                        <a href="DOKUMEN_UAT_DMS.pdf" download class="doc-proof">
+                            <i class="fas fa-file-pdf"></i>
+                            Download UAT Document
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ORGANIZATIONAL EXPERIENCE
+    ===================================================== -->
+
+    <section id="organization" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>04.</span>
+                Organizational Experience
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Team Member</h3>
+                        <p class="timeline-role">Litman Course Project — SMP Bina Taruna</p>
+                        <p class="timeline-meta">Bandung, Indonesia &nbsp;|&nbsp; May 2023</p>
+                        <ul>
+                            <li>
+                                Participated as a team member in a Litman (Literasi Manusia) course assignment, delivering a socialization session to junior high school students on cyberbullying awareness on social media.
+                            </li>
+                        </ul>
+                        <div class="doc-proof cert-proof" data-img="cyberbullying.jpeg" data-alt="Cyberbullying Socialization Team Photo">
+                            <i class="fas fa-image"></i>
+                            View Photo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Public Relations Committee</h3>
+                        <p class="timeline-role">i-SMILE Laboratory, Telkom University</p>
+                        <p class="timeline-meta">Bandung, Indonesia &nbsp;|&nbsp; June 2024</p>
+                        <ul>
+                            <li>
+                                Contributed as a Public Relations Committee member in the "Eyes of Tomorrow: Navigating the Landscape of AI Object Detection and Robotics" workshop.
+                            </li>
+                        </ul>
+                        <div class="doc-proof cert-proof" data-img="Sertif i smile.jpeg" data-alt="i-SMILE Laboratory Committee Certificate">
+                            <i class="fas fa-image"></i>
+                            View Certificate
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Delegate</h3>
+                        <p class="timeline-role">AIESEC in Bandung</p>
+                        <p class="timeline-meta">Bandung, Indonesia &nbsp;|&nbsp; September 2024</p>
+                        <ul>
+                            <li>
+                                Participated as a delegate in "Youth Today X Join AIESEC 2024" in Bandung.
+                            </li>
+                        </ul>
+                        <div class="doc-proof cert-proof" data-img="Aisec.jpeg" data-alt="AIESEC Delegate Certificate">
+                            <i class="fas fa-image"></i>
+                            View Certificate
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SESAMA 2.0 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Volunteer – Personal Assistant (PA)</h3>
+                        <p class="timeline-role">SESAMA 2.0 — Bantu Mereka Indonesia</p>
+                        <p class="timeline-meta">Bandung, Indonesia &nbsp;|&nbsp; May 2025</p>
+                        <ul>
+                            <li>
+                                Assisted participants during SESAMA 2.0 and supported them throughout the event activities.
+                            </li>
+                        </ul>
+                        <div class="doc-proof cert-proof" data-img="Sesama.jpeg" data-alt="SESAMA 2.0 Volunteer Certificate">
+                            <i class="fas fa-image"></i>
+                            View Certificate
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Committee Member</h3>
+                        <p class="timeline-role">Webinar Research</p>
+                        <p class="timeline-meta">Bandung, Indonesia &nbsp;|&nbsp; November 2025</p>
+                        <ul>
+                            <li>
+                                Served as a committee member for a research webinar on consumer reviews and seller reputation in the digital era.
+                            </li>
+                        </ul>
+                        <div class="doc-proof cert-proof" data-img="WebinerSertif.jpeg" data-alt="Webinar Research Committee Certificate">
+                            <i class="fas fa-image"></i>
+                            View Certificate
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+    ===================================================== -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>05.</span>
+                Projects
+            </div>
+
+            <div class="journey-grid">
+
+                <!-- PLN JAGAGRID -->
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+
+                    <h3>PLN JagaGRID: Tree Mapping &amp; Monitoring App</h3>
+
+                    <p>
+                        Final project. An Android app for PLN UP3 Parepare to record trees with GPS and photos, predict growth toward power lines, and send automatic Telegram reminders. Passed 100% of functional tests and reached 85.75% user satisfaction (UAT, 14 respondents).
+                    </p>
+
+                    <p class="project-tags">
+                        Flutter, Dart, Firebase Firestore, Google Maps API, Node.js, Telegram Bot API
+                    </p>
+
+                    <a
+                        href="https://youtu.be/t6bIU_6evUw?si=xjd5GRTBvVIYdc1b"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="doc-proof"
+                    >
+                        <i class="fab fa-youtube"></i>
+                        Watch Demo
+                    </a>
+                </div>
+
+
+                <!-- CELOE DMS -->
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+
+                    <h3>Document Management System (DMS)</h3>
+
+                    <p>
+                        Backend of a web-based DMS at CELOE Telkom University: user, role, and master data management with JWT authentication, role-based access, pagination, indexing, and PDF/CSV/Excel export.
+                    </p>
+
+                    <p class="project-tags">
+                        PHP, CodeIgniter 4, MySQL, REST API, JWT
+                    </p>
+
+                    <a href="DOKUMEN_UAT_DMS.pdf" download class="doc-proof">
+                        <i class="fas fa-file-pdf"></i>
+                        UAT Document
+                    </a>
+                </div>
+
+
+                <!-- ARDUINO PID -->
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+
+                    <h3>Ball Balance with Arduino PID Controller</h3>
+
+                    <p>
+                        An embedded systems project implementing a PID control algorithm on Arduino to keep a ball balanced on a beam in real time.
+                    </p>
+
+                    <p class="project-tags">
+                        Arduino, C++, PID Control
+                    </p>
+
+                    <div class="journey-project">
+                        <img src="arduino-pid.jpg" alt="Ball Balance with Arduino PID Controller">
+                        <h4>Project Proof</h4>
+                        <p>Click photo to enlarge</p>
+                    </div>
+                </div>
+
+
+                <!-- LDR MONITORING -->
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <h3>LDR Light Intensity Monitoring System</h3>
+
+                    <p>
+                        Developed a light intensity monitoring system using LDR, 7-segment display, LCD, and LED indicators.
+                    </p>
+
+                    <p class="project-tags">
+                        Arduino, LDR Sensor, LCD, 7-Segment Display
+                    </p>
+
+                    <div class="journey-project">
+                        <img src="ldr-monitoring.jpg" alt="LDR Light Intensity Monitoring System">
+                        <h4>Project Proof</h4>
+                        <p>Click photo to enlarge</p>
+                    </div>
+                </div>
+
+
+                <!-- PYTHON CALCULATOR -->
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+
+                    <h3>Python Calculator</h3>
+
+                    <p>
+                        A calculator application built with Python as an early programming project.
+                    </p>
+
+                    <p class="project-tags">
+                        Python
+                    </p>
+                </div>
+
+
+                <!-- KARIMART -->
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+
+                    <h3>KariMart Website</h3>
+
+                    <p>
+                        An academic project building a simple e-commerce style website, focusing on layout structure and responsive design.
+                    </p>
+
+                    <p class="project-tags">
+                        HTML, CSS, JavaScript
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CERTIFICATIONS & ACHIEVEMENTS
+    ===================================================== -->
+
+    <section id="certifications" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>06.</span>
+                Certifications &amp; Achievements
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Leadership</h3>
+                    <p>Information and Communication Technology – Soft Skills Development III</p>
+                    <p class="project-tags">2025</p>
+                    <div class="doc-proof cert-proof" data-img="Leadership.jpeg" data-alt="Leadership Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-language"></i>
+                    <h3>English Proficiency Test</h3>
+                    <p>Achieved a score of 403 in the English Proficiency Test (EPrT).</p>
+                    <p class="project-tags">2026</p>
+                    <div class="doc-proof cert-proof" data-img="EPRT.jpeg" data-alt="English Proficiency Test Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>KAI Ideation Challenge</h3>
+                    <p>Participated in the challenge to develop innovative ideas and solutions.</p>
+                    <p class="project-tags">2025</p>
+                    <div class="doc-proof cert-proof" data-img="Kai.jpeg" data-alt="KAI Ideation Challenge Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development Fundamental</h3>
+                    <p>Completed a short course on backend development in software engineering.</p>
+                    <p class="project-tags">2024</p>
+                    <div class="doc-proof cert-proof" data-img="MySkill.jpeg" data-alt="Backend Development Fundamental Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Information Security</h3>
+                    <p>Completed an introductory course in information security fundamentals.</p>
+                    <p class="project-tags">2024</p>
+                    <div class="doc-proof cert-proof" data-img="information Security.jpeg" data-alt="Information Security Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Data Cleaning &amp; Visualization</h3>
+                    <p>Learned data cleaning and visualization using Excel and Looker Studio.</p>
+                    <p class="project-tags">2024</p>
+                    <div class="doc-proof cert-proof" data-img="Excel.jpeg" data-alt="Data Cleaning &amp; Visualization Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Claude Certificate</h3>
+                    <p>Certificate of completion related to Claude AI.</p>
+                    <!-- TODO: tambahkan tahun, contoh: <p class="project-tags">2026</p> -->
+                    <div class="doc-proof cert-proof" data-img="SertifClaude.jpeg" data-alt="Claude Certificate">
+                        <i class="fas fa-image"></i>
+                        View Certificate
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+    ===================================================== -->
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>07.</span>
+                Skills
+            </div>
+
+            <p class="skills-note">
+                Highlighted skills are the ones I used most in my internships and final project.
+            </p>
+
+            <div class="skills-group">
+                <h3>Programming Languages</h3>
+                <div class="chips">
+                    <span class="core">Dart</span>
+                    <span class="core">PHP</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>C</span>
+                    <span>C++</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Mobile</h3>
+                <div class="chips">
+                    <span class="core">Flutter</span>
+                    <span class="core">Firebase Firestore</span>
+                    <span>Provider</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Backend</h3>
+                <div class="chips">
+                    <span class="core">CodeIgniter 4</span>
+                    <span class="core">MySQL</span>
+                    <span>SQLite</span>
+                    <span>Node.js</span>
+                    <span>RESTful API</span>
+                    <span>JWT Authentication</span>
+                    <span>RBAC</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Frontend</h3>
+                <div class="chips">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Embedded &amp; IoT</h3>
+                <div class="chips">
+                    <span>Arduino</span>
+                    <span>PID Control</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Tools &amp; Others</h3>
+                <div class="chips">
+                    <span>Git &amp; GitHub</span>
+                    <span>Figma</span>
+                    <span>Postman</span>
+                    <span>Google Maps API</span>
+                    <span>Telegram Bot API</span>
+                    <span>Railway</span>
+                    <span>ImageKit</span>
+                    <span>Excel</span>
+                    <span>Looker Studio</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Soft Skills</h3>
+                <div class="chips chips-soft">
+                    <span>Problem Solving</span>
+                    <span>Teamwork</span>
+                    <span>Adaptability</span>
+                    <span>Communication</span>
+                    <span>Leadership</span>
+                    <span>Independent Work</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ===================================================== -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="contact-card">
+
+                <div class="section-title">
+                    <span>08.</span>
+                    Get In Touch
+                </div>
+
+                <p class="hero-status">Open to Mobile &amp; Backend roles</p>
+
+                <h2>Let's Work Together</h2>
+
+                <p>
+                    I'm a fresh graduate looking for my first full-time role.
+                    The fastest way to reach me is by WhatsApp or email.
+                </p>
+
+                <div class="contact-email">
+                    <a href="mailto:andisutrakhusnulkarima@gmail.com" class="cta-button">
+                        <i class="fas fa-envelope"></i>
+                        Send me an email
+                    </a>
+                    <p class="contact-address">
+                        <a href="mailto:andisutrakhusnulkarima@gmail.com">andisutrakhusnulkarima@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://wa.me/6289502768494?text=Halo%20Andi%2C%20saya%20melihat%20portfolio%20kamu"
+                       target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://github.com/andisutrakhusnulkarima" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/andisutra-khusnulkarima-b037202a1/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andi_syutra" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+
+                <p class="contact-phone">
+                    WhatsApp:
+                    <a href="https://wa.me/6289502768494" target="_blank" rel="noopener noreferrer">0895-0276-8494</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+        <p>© 2026 Andi Sutra Khusnul K.</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+        <p>Original template by @WerDeveloper</p>
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+        /* Smooth Scroll (href="#" saja diabaikan supaya tidak error) */
+
+        document
+            .querySelectorAll('a[href^="#"]')
+            .forEach(function(anchor) {
+
+                anchor.addEventListener('click', function(event) {
+
+                    const href = this.getAttribute('href');
+
+                    if (!href || href === '#') {
+                        event.preventDefault();
+                        return;
+                    }
+
+                    const target = document.querySelector(href);
+
+                    if (target) {
+                        event.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+
+                });
+
+            });
+
+
+        /* Navbar saat scroll */
+
+        window.addEventListener('scroll', function() {
+
+            const navbar = document.querySelector('.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(8, 11, 32, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(8, 11, 32, 0.75)';
+            }
+
+        });
+
+
+        /* Lightbox - klik foto atau tombol View Certificate untuk perbesar */
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const overlay = document.getElementById('lightboxOverlay');
+            const overlayImg = document.getElementById('lightboxImg');
+            const closeBtn = document.getElementById('lightboxClose');
+
+            function openLightbox(src, alt) {
+                overlayImg.src = src;
+                overlayImg.alt = alt || '';
+                overlay.classList.add('active');
+            }
+
+            function closeLightbox() {
+                overlay.classList.remove('active');
+                overlayImg.src = '';
+            }
+
+            /* Sumber 1: foto proyek */
+            document
+                .querySelectorAll('.journey-project img')
+                .forEach(function(img) {
+                    img.addEventListener('click', function() {
+                        openLightbox(img.src, img.alt);
+                    });
+                });
+
+            /* Sumber 2: tombol "View Certificate" / "View Photo" */
+            document
+                .querySelectorAll('.cert-proof')
+                .forEach(function(btn) {
+                    btn.addEventListener('click', function() {
+                        const imgSrc = btn.getAttribute('data-img');
+                        const imgAlt = btn.getAttribute('data-alt');
+                        if (imgSrc) {
+                            openLightbox(imgSrc, imgAlt);
+                        }
+                    });
+                });
+
+            closeBtn.addEventListener('click', closeLightbox);
+
+            overlay.addEventListener('click', function(event) {
+                if (event.target === overlay) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeLightbox();
+                }
+            });
+
+        });
+
+    </script>
+
+
+    <!-- =====================================================
+         LIGHTBOX OVERLAY
+    ===================================================== -->
+
+    <div class="lightbox-overlay" id="lightboxOverlay">
+
+        <div class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <img src="" alt="" id="lightboxImg">
+
+    </div>
+
+    <!-- Hamburger menu + penanda menu aktif -->
+    <script src="nav.js"></script>
+
+</body>
+
+</html>

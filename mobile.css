@@ -1,0 +1,174 @@
+/* =====================================================
+   mobile-fix.css
+   Taruh SETELAH style.css supaya menimpa aturan lama.
+===================================================== */
+
+/* ---------- Layar HP: hindari lompat tinggi & geser samping ---------- */
+html { -webkit-text-size-adjust: 100%; }
+img { max-width: 100%; }
+
+/* ---------- NAMA: selalu satu baris, ukuran menyesuaikan layar ---------- */
+.hero-content { max-width: 1000px; }
+
+.hero h1 {
+    font-size: clamp(1.3rem, 6.4vw, 3.8rem);
+    line-height: 1.15;
+    white-space: nowrap;
+}
+
+.hero h2 { font-size: clamp(1.1rem, 3.6vw, 1.7rem); }
+
+.hero {
+    min-height: 100vh;
+    min-height: 100svh; /* pas dengan tinggi layar HP (bar browser) */
+}
+
+.hero-description { font-size: clamp(0.92rem, 2.6vw, 1rem); }
+
+/* ---------- NAVBAR ---------- */
+.navbar { padding: 14px 5%; }
+
+.nav-links { gap: clamp(12px, 1.8vw, 28px); }
+.nav-links a { font-size: 0.85rem; position: relative; padding: 4px 0; }
+
+/* penanda menu aktif */
+.nav-links a.active { color: #fff; }
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -4px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--gradient);
+}
+
+/* tombol hamburger (dibuat oleh nav.js) */
+.nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+}
+.nav-toggle span {
+    width: 20px; height: 2px;
+    border-radius: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+.menu-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---------- Tablet & HP: menu jadi hamburger ---------- */
+@media (max-width: 960px) {
+
+    .nav-container {
+        flex-direction: row;   /* timpa aturan lama yang menumpuk logo & menu */
+        gap: 0;
+    }
+
+    .nav-toggle { display: flex; }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 5% 16px;
+        background: rgba(8, 11, 32, 0.98);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .menu-open .nav-links { display: flex; }
+
+    .nav-links a {
+        padding: 14px 4px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .nav-links a.active::after { display: none; }
+    .nav-links a.active { color: var(--cyan); }
+}
+
+/* ---------- HP ---------- */
+@media (max-width: 600px) {
+
+    .hero { padding: 110px 16px 60px; }
+    .hero h1 { font-size: clamp(1.3rem, 6.4vw, 2.2rem); }
+
+    .section { padding: 64px 16px; }
+    .section-title { font-size: 1.6rem; margin-bottom: 32px; }
+
+    .about-content h2,
+    .contact-card h2 { font-size: 1.5rem; }
+
+    .timeline::before { left: 7px; }
+    .timeline-item { padding-left: 36px; margin-bottom: 28px; }
+    .timeline-dot { left: -1px; }
+    .timeline-content { padding: 18px; }
+
+    .journey-card { padding: 22px; }
+    .skill-card { padding: 22px; }
+
+    .contact-card { padding: 40px 18px; }
+
+    /* email panjang tidak boleh keluar layar */
+    .contact-email .cta-button {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.85rem;
+        padding: 14px 12px;
+        word-break: break-all;
+    }
+
+    .chips span { padding: 7px 13px; font-size: 0.82rem; }
+
+    .lightbox-overlay { padding: 16px; }
+    .lightbox-close { top: 14px; right: 14px; }
+}
+
+
+/* ---------- Contact ---------- */
+.contact-address {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    word-break: break-all;
+}
+
+.contact-phone {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.contact-phone a {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.contact-phone a:hover { text-decoration: underline; }
+
+
+/* ---------- Contact: jarak antar elemen ---------- */
+.contact-card .hero-status { margin-bottom: 20px; }
+.contact-card h2 { margin-bottom: 18px; line-height: 1.25; }
+.contact-address { margin-top: 14px; }
+.contact-phone { margin-top: 24px; }
+
+
+/* ---------- Contact: alamat email bisa diklik ---------- */
+.contact-address a { color: var(--cyan); font-weight: 600; }
+.contact-address a:hover { text-decoration: underline; }
